@@ -1,0 +1,19 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "description": "chrlwv.tech website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrlwv/website.git"
+  },
+  "author": "skillzl <user@skillzl.me>",
+  "license": "SEE LICENSE IN <LICENSE>",
+  "bugs": {
+    "url": "https://github.com/chrlwv/website/issues"
+  },
+  "homepage": "https://github.com/chrlwv/website#readme"
+}
