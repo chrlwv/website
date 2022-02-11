@@ -1,7 +1,7 @@
 /** @format */
 
 import React from 'react';
-import { ThemeProvider, Button, Container } from 'theme-ui';
+import { ThemeProvider, Button, Container, Image } from 'theme-ui';
 import theme from 'theme';
 import SEO from '@americanexpress/react-seo';
 import Layout from 'components/layout';
@@ -23,8 +23,8 @@ export default function IndexPage() {
             }}
           />
           <Container sx={styles.container}>
-            <img sx={styles.avatar} src={session.user.image} /> Signed in as{' '}
-            {session.user.email}
+            <Image src={session.user.image} className={styles.avatar} /> Signed
+            in as {session.user.name}
             <Button onClick={() => signOut()}>Sign out</Button>
           </Container>
         </Layout>
@@ -57,12 +57,12 @@ const styles = {
     justifyContent: 'space-between',
   },
   avatar: {
-    maxWidth: [null, null, null, '80%', 'none'],
-    mx: [null, null, null, 'auto', 'unset'],
-    mt: [6, null, null, null, 0],
-    alignItems: 'center',
-    '&:hover': {
-      filter: 'blur(1px) brightness(80%)',
-    },
+    borderradius: '2rem',
+    float: 'left',
+    height: '2.8rem',
+    width: '2.8rem',
+    backgroundColor: 'white',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
   },
 };
