@@ -19,8 +19,8 @@ const NavbarDrawer = () => {
 
   return (
     <Drawer
-      width="340px"
-      placement="right"
+      width='340px'
+      placement='right'
       drawerHandler={
         <Box sx={styles.handler}>
           <MenuButton />
@@ -30,32 +30,30 @@ const NavbarDrawer = () => {
       toggleHandler={toggleHandler}
       closeButton={
         <button sx={styles.closeButton}>
-          <Image src={close} alt="close" />
+          <Image src={close} alt='close' />
         </button>
       }
       maskStyle={styles.mask}
       drawerStyle={styles.drawer}
-      closeBtnStyle={styles.close}
-    >
+      closeBtnStyle={styles.close}>
       <Box sx={styles.wrapper}>
-        <Box as="ul" sx={styles.navbar}>
+        <Box as='ul' sx={styles.navbar}>
           {menuItems.map(({ path, label }, i) => (
-            <Box as="li" key={i}>
+            <Box as='li' key={i}>
               <Link
-                activeClass="active"
+                activeClass='active'
                 to={path}
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
-              >
+                duration={500}>
                 {label}
               </Link>
             </Box>
           ))}
         </Box>
-        <Button variant="primary" sx={styles.donateNow}>
-          Invite
+        <Button variant='primary' sx={styles.donateNow}>
+          Login
         </Button>
       </Box>
     </Drawer>

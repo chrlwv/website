@@ -17,29 +17,33 @@ import illustration from 'assets/images/chrlwv.jpg';
 
 const Banner = () => {
   return (
-    <section id="home" sx={styles.section}>
+    <section id='home' sx={styles.section}>
       <Container sx={styles.container}>
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <div sx={styles.newsUpdate}>
-              <span>NEWS</span>
-              chrlwv.tech got a rebranding update; client works fine
+              <span>LAST COMMIT</span>
+              🔥 hotfix: messageHandler & bot Structure
             </div>
-            <Heading as="h1">
-             chrlwv.tech
-            </Heading>
-            <Text as="p">
-              A multipurpose discord client written in javascript. Used to be a freelance start-up project but now it's a public client for all around the world users.
+            <Heading as='h1'>chrlwv.tech</Heading>
+            <Text as='p'>
+              A multipurpose discord client written in javascript. Used to be a
+              freelance start-up project but now it's a public client for all
+              around the world users.
             </Text>
             <div sx={styles.buttonGroup}>
-            <NextLink href="https://discord.com/oauth2/authorize?client_id=902937010103275581&permissions=1916267615&scope=bot"><Button variant="primary">Invite</Button></NextLink>
-            <NextLink href="https://discord.gg/RPRfpnM6MZ"><Button variant="white" className="white">
-                Support
-              </Button></NextLink>
+              <NextLink href='https://discord.com/oauth2/authorize?client_id=902937010103275581&permissions=1916267615&scope=bot'>
+                <Button variant='primary'>Invite</Button>
+              </NextLink>
+              <NextLink href='https://discord.gg/RPRfpnM6MZ'>
+                <Button variant='white' className='white'>
+                  Support
+                </Button>
+              </NextLink>
             </div>
           </Box>
-          <Flex as="figure" sx={styles.illustration}>
-           <Image src={illustration} alt="chrlwv.tech" />
+          <Flex as='figure' sx={styles.illustration}>
+            <Image src={illustration} alt='chrlwv.tech' />
           </Flex>
         </Grid>
       </Container>

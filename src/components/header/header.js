@@ -29,24 +29,22 @@ export default function Header() {
       <Sticky
         enabled={true}
         top={0}
-        activeClass="is-sticky"
+        activeClass='is-sticky'
         innerZ={100}
-        onStateChange={handleStateChange}
-      >
+        onStateChange={handleStateChange}>
         <header
           sx={styles.header}
-          className={state.isSticky ? 'is-sticky' : ''}
-        >
+          className={state.isSticky ? 'is-sticky' : ''}>
           <Container sx={styles.container}>
-            <Image src={illustration} alt="chrlwv.tech" />
-            <nav as="nav" sx={styles.navbar} className={'navbar'}>
+            <Image src={illustration} alt='chrlwv.tech' />
+            <nav as='nav' sx={styles.navbar} className={'navbar'}>
               {menuItems.map(({ path, label }, i) => (
                 <NavLink key={i} path={path} label={label} />
               ))}
             </nav>
-            <NextLink href="https://discord.com/oauth2/authorize?client_id=902937010103275581&permissions=1916267615&scope=bot"><Button variant="primary" sx={styles.button}>
-              Invite
-            </Button></NextLink>
+            <Button variant='primary' type='button' disabled sx={styles.button}>
+              Login
+            </Button>
             <NavbarDrawer />
           </Container>
         </header>
