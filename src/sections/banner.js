@@ -22,8 +22,8 @@ const Banner = () => {
         <Grid sx={styles.grid}>
           <Box sx={styles.content}>
             <div sx={styles.newsUpdate}>
-              <span>LAST COMMIT</span>
-              🔥 hotfix: messageHandler & bot Structure
+              <span>NEWS</span>
+              upcoming client rewrite for a new cleanup
             </div>
             <Heading as='h1'>chrlwv.tech</Heading>
             <Text as='p'>
@@ -43,7 +43,9 @@ const Banner = () => {
             </div>
           </Box>
           <Flex as='figure' sx={styles.illustration}>
-            <Image src={illustration} alt='chrlwv.tech' />
+            <NextLink href='https://github.com/chrlwv'>
+              <Image src={illustration} alt='chrlwv.tech' />
+            </NextLink>
           </Flex>
         </Grid>
       </Container>

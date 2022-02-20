@@ -130,6 +130,9 @@ const styles = {
       position: 'relative',
       transition: 'all 0.3s ease-in-out 0s',
     },
+    '&:hover': {
+      color: '#bdbdbd',
+    },
     'li:last-child > a': {
       borderBottom: (t) => `1px solid ${t.colors.borderColor}`,
     },

@@ -81,6 +81,9 @@ const styles = {
       fontWeight: 400,
       padding: 0,
       transition: 'all 0.3s ease-in-out 0s',
+      '&:hover': {
+        color: '#bdbdbd',
+      },
       '+ a': {
         ml: [null, null, null, null, 4, 7],
       },

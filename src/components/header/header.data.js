@@ -8,7 +8,7 @@ export default [
     label: 'Features',
   },
   {
-    href: 'home',
-    label: 'Support',
+    href: 'github',
+    label: 'Github',
   },
 ];
