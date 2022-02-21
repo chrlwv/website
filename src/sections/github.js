@@ -3,7 +3,7 @@ import Image from 'components/image';
 import NextLink from 'next/link';
 import { Container } from 'theme-ui';
 
-import illustration from 'assets/images/github.svg';
+import illustration from 'assets/images/github.png';
 
 const Github = () => {
   return (
@@ -30,8 +30,9 @@ const styles = {
     pb: [8, null, null, null, 10, 0],
   },
   illustration: {
+    width: '512px',
     position: 'relative',
-    left: '25%',
+    left: '30%',
     '&:hover': {
       transform: 'scale(1.1)',
     },
